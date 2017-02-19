@@ -1,0 +1,40 @@
+.head{
+  background-color: @headBgColor;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid @lineColor;
+  .text{
+    color: @defaultColor;
+  }
+  .custom_link{
+    border: none;
+    color: @defaultColor;
+    background-color: @warnColor;
+    float: right;
+    padding: 6px 15px;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .back{
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    font-size: 22px;
+    color: @defaultColor;
+    height: 44px;
+    width: 44px;
+    text-align: left;
+  }
+  .title{
+    text-align: center;
+    color: @defaultColor;
+  }
+}

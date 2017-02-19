@@ -1,0 +1,60 @@
+.me{
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  .me-container{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+  }
+  .person-icon{
+      display: block;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      margin: 0 auto;
+  }
+  .name{
+    margin: 20px 0;
+  }
+  .me-do{
+    padding: 0 15px;
+    font-size: 0;
+    .item{
+      background-color: @headBgColor;
+      color: @defaultColor;
+      font-size: 18px;
+      display: inline-block;
+      width: 45%;
+      height: 95px;
+      line-height: 95px;
+      &:first-child{
+        margin-right: 10%;
+      }
+    }
+  }
+  .btn-logout{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: @dangerColor;
+    color: @defaultColor;
+  }
+  .btn-login{
+    display: block;
+    width: 100%;
+    margin-top: 200px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: @headBgColor;
+    color: @defaultColor;
+  }
+}

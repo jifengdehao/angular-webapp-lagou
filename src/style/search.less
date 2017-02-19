@@ -1,0 +1,48 @@
+.search-bar{
+  background-color: @headBgColor;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 44px;
+  line-height: 44px;
+  z-index: 9999;
+  display: flex;
+
+  .search-content{
+    flex: 4;
+    position: relative;
+    .search-input{
+      background-color: @bodyBgColor;
+      border-radius: 80px;
+      border-style: none;
+      outline-width: 0;
+      padding-left: 30px;
+      height: 30px;
+      width:100%;
+      padding-right: 5px;
+      font-size: 14px;
+    }
+    .search-icon{
+      position: absolute;
+      left: 7px;
+      top: 10px;
+      transform: scale(0.6);
+      display: block;
+    }
+  }
+  button{
+    text-align: center;
+    flex: 1;
+    border: none;
+    background-color: @headBgColor;
+    padding: 0;
+    font-size: 14px;
+  }
+  .btn-cancel{
+    color: @defaultColor;
+  }
+  .btn-search{
+    color: @defaultColor;
+  }
+}

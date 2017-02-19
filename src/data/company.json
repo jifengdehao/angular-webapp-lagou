@@ -1,0 +1,44 @@
+{
+    "id": "c1",
+    "companyId":"c1",
+    "imageUrl": "/image/company-1.png",
+    "companyName": "慕课网",
+    "industryName": "移动互联网",
+    "state": "A轮",
+    "scaleName": "50-150人",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "技术",
+      "positionList": [
+        {
+        "id": "p1",
+        "name": "IOS前端工程师",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "15k-25k"
+        },
+        {
+          "id": "p2",
+          "name": "web前端工程师",
+          "createdDate": "2016-02-16 21:30",
+          "salary": "18k-20k"
+        }
+      ]
+    }, {
+      "id": "yunying",
+      "name": "运营",
+      "positionList": [
+        {
+        "id": "y1",
+        "name": "运营总监",
+        "createdDate": "2016-04-10 13:30",
+        "salary": "25k以上"
+       },
+        {
+          "id": "y2",
+          "name": "销售",
+          "createdDate": "2016-04-10 15:30",
+          "salary": "20k以上"
+        }
+      ]
+    }]
+}

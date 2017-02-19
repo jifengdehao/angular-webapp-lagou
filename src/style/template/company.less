@@ -1,0 +1,25 @@
+.company{
+  background-color: @defaultColor;
+  padding: 15px;
+  display: flex;
+  .cover{
+    width: 51px;
+    height: 51px;
+    flex: 0 0 51px;
+    margin-right: 10px;
+  }
+  .content{
+    flex: 1;
+    .title{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .dec{
+      display: -webkit-box;
+      -webkit-line-clamp:2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient:vertical;
+    }
+  }
+}

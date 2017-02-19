@@ -1,0 +1,55 @@
+.positionList{
+  position: absolute;
+  top: 44px;
+  bottom: 44px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: scroll;
+  .list-item{
+    display: flex;
+    border-bottom: 1px solid @lineColor;
+    background-color: @defaultColor;
+    padding: 5px 10px;
+    &:last-child{
+      border-bottom: none;
+    }
+    .cover{
+      width: 80px;
+      height: 80px;
+      flex: 0 0 80px;
+      margin-right: 10px;
+    }
+    .content{
+      flex: 1;
+      position: relative;
+      .title{
+        font-size: 14px;
+      }
+      .salary{
+        color: @dangerColor;
+        font-size: 14px;
+      }
+      .time{
+        color:#999999;
+        font-size: 14px;
+      }
+      .icon{
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        width: 28px;
+        height: 28px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 28px 28px;
+        &.star{
+          background-image: url("../../image/star.png");
+        }
+        &.star-active{
+          background-image: url("../../image/star-active.png");
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.foot{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  border-top: 1px solid @lineColor;
+  background-color: @defaultColor;
+  li{
+    flex: 1;
+    color:@muteColor;
+    &.select{
+      color: @highlightColor;
+      background-color: @highlightBgColor;
+    }
+  }
+  .icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+  .icon-document{
+    background-image:url("../../image/document.png");
+  }
+  .icon-search{
+    background-image: url("../../image/search.png");
+  }
+  .icon-my{
+    background-image: url("../../image/my.png");
+  }
+  .text{
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

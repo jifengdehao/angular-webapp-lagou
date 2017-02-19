@@ -1,0 +1,53 @@
+.sheet{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.2);
+  z-index: 10000;
+  .sheet-wap{
+    position: fixed;
+    left: 0;
+    right:0;
+    z-index: 10001;
+    bottom: 0;
+    .list{
+         background-color: @sheetBgColor;
+         margin: 8px;
+         text-align: center;
+         border-radius: 5px;
+         max-height: 500px;
+         overflow:hidden;
+        .item{
+          height: 50px;
+          line-height: 50px;
+          border-bottom: 1px solid @lineColor;
+          color: @sheetColor;
+          font-size: 18px;
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+    }
+    .btn-wap{
+      padding: 0 8px 8px 8px;
+      .cancel{
+        background-color: @sheetBgColor;
+        padding: 0;
+        display: block;
+        width: 100%;
+        border: none;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 5px;
+        color: @sheetColor;
+        font-size: 18px;
+      }
+
+    }
+
+  }
+}

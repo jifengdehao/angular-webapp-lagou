@@ -1,0 +1,13 @@
+<div app-head-bar text="职位详情"></div>
+<div class="scroll">
+    <div app-position-info pos="positionInfo" is-login="isLogin"></div>
+    <div app-company cny="companyInfo"></div>
+    <div class="position-dec">
+        <h3 class="title" ng-bind="positionInfo.description.title"></h3>
+        <h4 class="subtitle" ng-bind="positionInfo.description.subtitle"></h4>
+        <ul class="dec-list">
+            <li class="item" ng-repeat="item in positionInfo.description.list" ng-bind="item.text"></li>
+        </ul>
+    </div>
+</div>
+<button class="bottom-btn" ng-click="go()" ng-bind="message"></button>

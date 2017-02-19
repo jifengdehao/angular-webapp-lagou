@@ -1,0 +1,15 @@
+<div class="positionInfo">
+    <div class="item">
+        <span class="text" ng-bind="pos.name"></span>
+        <span class="ml15 red text" ng-bind="pos.salaryName"></span>
+    </div>
+    <div class="item">
+        <span class="text" ng-bind="pos.cityName"></span>
+        <span class="ml15 text" ng-bind="pos.experience"></span>
+        <span class="ml15 text" ng-bind="pos.education"></span>
+    </div>
+    <div class="item">
+        <span class="text" ng-bind="pos.benefit"></span>
+    </div>
+    <img class="icon-collection" ng-src="{{imagePath}}" ng-show="isLogin" ng-click="favorite()"/>
+</div>

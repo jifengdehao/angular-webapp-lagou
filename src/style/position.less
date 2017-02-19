@@ -1,0 +1,48 @@
+.bottom-btn{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  height: 44px;
+  line-height: 44px;
+  background-color: @headBgColor;
+  color: @defaultColor;
+  border: none;
+  text-align: center;
+  overflow: hidden;
+  font-size: 14px;
+}
+.scroll{
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 44px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  .position-dec{
+    margin-top: 10px;
+    background-color: @defaultColor;
+    .title{
+      padding: 0 15px;
+      border-bottom: 1px solid @lineColor;
+      height: 35px;
+      line-height: 35px;
+      font-weight: bold;
+    }
+    .subtitle{
+      padding: 0 15px;
+      margin-top: 5px;
+      line-height: 25px;
+    }
+    .dec-list{
+      padding: 0 15px 15px 15px;
+      .item{
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

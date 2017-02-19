@@ -1,0 +1,19 @@
+.tab{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: flex;
+  background-color: @tabBgColor;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 44px;
+  z-index: 9999;
+  .tab-item{
+    flex: 1;
+    border-bottom: 2px solid @bodyBgColor;
+    &.active{
+      border-bottom: 2px solid @headBgColor;
+    }
+  }
+}
