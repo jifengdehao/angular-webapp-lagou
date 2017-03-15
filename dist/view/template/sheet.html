@@ -1,0 +1,14 @@
+<div class="sheet" ng-show="visible" ng-click="visible=false;">
+    <div class="sheet-wap">
+        <ul class="list">
+            <li ng-click="select(item);" ng-repeat="item in list" class="item" ng-bind="item.name"></li>
+          <!--  <li class="item">少于50人</li>
+            <li class="item">50~100人</li>
+            <li class="item">100~500人</li>
+            <li class="item">500人以上</li>-->
+        </ul>
+        <div class="btn-wap">
+            <button class="cancel" ng-click="visible=false;">取消</button>
+        </div>
+    </div>
+</div>

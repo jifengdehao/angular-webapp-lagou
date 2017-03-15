@@ -1,0 +1,9 @@
+<div class="company" ui-sref="company({id:cny.companyId})">
+   <div class="cover">
+       <img ng-src="{{cny.imageUrl}}" alt="{{cny.companyName}}" width="100%" height="100%"/>
+   </div>
+    <div class="content">
+        <div class="title" ng-bind="cny.companyName"></div>
+        <div class="dec" ng-bind="cny.industryName+' '+cny.scaleName"></div>
+    </div>
+</div>

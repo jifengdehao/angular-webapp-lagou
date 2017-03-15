@@ -1,0 +1,16 @@
+{
+  "name": "angular-webapp",
+  "description": "webapp",
+  "main": "",
+  "authors": [
+    "jifengdehao 2975830779@qq.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jifengdehao/angular-webapp-lagou",
+  "devDependencies": {
+    "angular": "^1.6.3",
+    "angular-validation": "^1.4.3",
+    "angular-ui-router": "^0.4.2",
+    "angular-cookies": "^1.6.3"
+  }
+}

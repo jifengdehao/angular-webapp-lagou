@@ -1,0 +1,17 @@
+<div class="me">
+    <div class="me-container" ng-if="name">
+        <img ng-src="{{image}}" alt="" class="person-icon"/>
+        <div class="name" ng-bind="name"></div>
+        <div class="me-do">
+            <div class="item" ui-sref="post">投递</div>
+            <div class="item" ui-sref="favorite">收藏</div>
+            <button class="btn-logout" ui-sref="login" ng-click="logout()">退出登录</button>
+        </div>
+    </div>
+    <div class="me-container" ng-hide="name">
+        <div class="me-do">
+            <button class="btn-login" ui-sref="login">去登录</button>
+        </div>
+    </div>
+</div>
+<div app-foot></div>

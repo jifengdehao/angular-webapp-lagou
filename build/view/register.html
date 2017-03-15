@@ -1,0 +1,22 @@
+<div class="register">
+    <form name="form">
+        <div class="form-group">
+            <label class="icon account" for="phone"></label>
+            <input name="phone" ng-model="user.phone" validator="required,phone" type="text" placeholder="请输入手机号" class="form-input" id="phone"/>
+        </div>
+        <div class="form-group">
+            <label class="icon lock" for="pass"></label>
+            <input name="password"ng-model="user.password" validator="required,password" type="password" placeholder="设置6位以上的密码" class="form-input" id="pass"/>
+        </div>
+        <div class="form-group" style="margin-top: 20px;">
+            <input ng-model="user.code" type="text" placeholder="短信验证码" class="form-input" id=""/>
+            <label ng-bind="time ? time : '发送短信'" ng-click="send()" class="icon" style="color: #12d5b5;font-size: 12px;">发送短信</label>
+        </div>
+        <div class="form-group">
+            <button class="btn-login" ui-sref="login">登录</button>
+        </div>
+        <div class="form-group">
+            <button class="btn-reg" validation-submit="form" ng-click="submit();">注册</button>
+        </div>
+    </form>
+</div>
